@@ -18,15 +18,16 @@ const skills = [
 ];
 
 const projects = [
-  {
-    number: "01",
-    title: "Your First Project",
-    description:
-      "Add your project description here. Explain what you built, the problem it solves, and the technologies you used.",
-    technologies: ["Next.js", "React", "TypeScript"],
-    github: "https://github.com/bibashthapa143",
-    demo: "#",
-  },
+ {
+  number: "01",
+  title: "Password Breach Checker",
+  description:
+    "A password security tool that evaluates password strength, estimates crack time, and checks whether a password has appeared in known data breaches.",
+  technologies: ["Next.js", "React", "JavaScript", "zxcvbn", "Have I Been Pwned API"],
+  github: "https://github.com/bibashthapa143/password-breach-checker-",
+  demo: "https://password-breach-checker-three.vercel.app/",
+},
+
   {
     number: "02",
     title: "Your Second Project",
@@ -342,6 +343,8 @@ export default function Home() {
 
                     <a
                       href={project.demo}
+                      target="blank"
+                      rel="noreferrer"
                       className="text-sm text-gray-400 transition hover:text-cyan-400"
                     >
                       Live Demo ↗
